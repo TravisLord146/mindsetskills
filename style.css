@@ -1,0 +1,131 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background: #0f0f0f;
+    color: white;
+}
+
+/* NAVIGATION */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 60px;
+    background: #000;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 30px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+nav ul li a:hover {
+    color: #d4af37;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+.logo-container img {
+    width: 50px;
+    margin-right: 10px;
+}
+
+/* HERO */
+.hero {
+    text-align: center;
+    padding: 120px 20px;
+    background: linear-gradient(to right, #0f0f0f, #1c1c1c);
+}
+
+.hero h1 {
+    font-size: 3em;
+    max-width: 900px;
+    margin: auto;
+    margin-bottom: 25px;
+}
+
+.hero p {
+    font-size: 1.2em;
+    max-width: 700px;
+    margin: auto;
+    margin-bottom: 40px;
+    color: #ccc;
+}
+
+.btn {
+    background: #d4af37;
+    color: black;
+    padding: 14px 30px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: white;
+}
+
+/* PILLARS SECTION */
+.pillars {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 80px 20px;
+}
+
+.card {
+    background: #1c1c1c;
+    padding: 40px;
+    margin: 20px;
+    width: 250px;
+    text-align: center;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    border: 1px solid #d4af37;
+}
+
+.card h2 {
+    margin-bottom: 15px;
+    color: #d4af37;
+}
+
+footer {
+    text-align: center;
+    padding: 30px;
+    background: black;
+    color: #aaa;
+}
+a {
+    color: #d4af37;
+    text-decoration: none;
+}
+
+a:hover {
+    color: white;
+}
