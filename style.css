@@ -1,3 +1,4 @@
+/* ===== GLOBAL RESET ===== */
 * {
     margin: 0;
     padding: 0;
@@ -5,127 +6,174 @@
 }
 
 body {
-    font-family: 'Arial', sans-serif;
-    background: #0f0f0f;
-    color: white;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: #0e0e0e;
+    color: #f5f5f5;
+    line-height: 1.6;
 }
 
-/* NAVIGATION */
+/* ===== CONTAINER ===== */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* ===== NAVIGATION ===== */
 nav {
+    background: #000;
+    padding: 20px 0;
+}
+
+.nav-wrapper {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 60px;
-    background: #000;
 }
 
 nav ul {
     list-style: none;
     display: flex;
-}
-
-nav ul li {
-    margin-left: 30px;
+    gap: 30px;
 }
 
 nav ul li a {
     text-decoration: none;
-    color: white;
+    color: #f5f5f5;
     font-weight: 500;
-    transition: 0.3s;
+    transition: 0.3s ease;
 }
 
 nav ul li a:hover {
     color: #d4af37;
 }
 
+/* ===== LOGO ===== */
 .logo-container {
     display: flex;
     align-items: center;
+    gap: 10px;
     font-weight: bold;
-    font-size: 1.2em;
+    font-size: 1.3rem;
 }
 
 .logo-container img {
-    width: 50px;
-    margin-right: 10px;
+    width: 45px;
 }
 
-/* HERO */
+/* ===== HERO SECTION ===== */
 .hero {
+    padding: 140px 0;
     text-align: center;
-    padding: 120px 20px;
-    background: linear-gradient(to right, #0f0f0f, #1c1c1c);
+    background: linear-gradient(180deg, #0e0e0e 0%, #1a1a1a 100%);
 }
 
 .hero h1 {
-    font-size: 3em;
-    max-width: 900px;
-    margin: auto;
+    font-size: 3.2rem;
     margin-bottom: 25px;
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .hero p {
-    font-size: 1.2em;
-    max-width: 700px;
-    margin: auto;
+    font-size: 1.2rem;
+    color: #bbbbbb;
     margin-bottom: 40px;
-    color: #ccc;
 }
 
 .btn {
     background: #d4af37;
-    color: black;
-    padding: 14px 30px;
-    text-decoration: none;
+    color: #000;
+    padding: 15px 35px;
     font-weight: bold;
-    border-radius: 5px;
-    transition: 0.3s;
+    text-decoration: none;
+    border-radius: 6px;
+    transition: 0.3s ease;
+    display: inline-block;
 }
 
 .btn:hover {
-    background: white;
+    background: #ffffff;
 }
 
-/* PILLARS SECTION */
+/* ===== SECTION SPACING ===== */
+section {
+    padding: 100px 0;
+}
+
+/* ===== PILLARS GRID ===== */
 .pillars {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    padding: 80px 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 40px;
 }
 
 .card {
-    background: #1c1c1c;
-    padding: 40px;
-    margin: 20px;
-    width: 250px;
+    background: #1a1a1a;
+    padding: 50px 30px;
+    border-radius: 12px;
     text-align: center;
-    border-radius: 10px;
-    transition: 0.3s;
+    transition: 0.3s ease;
+    text-decoration: none;
+    color: inherit;
 }
 
 .card:hover {
-    transform: translateY(-10px);
+    transform: translateY(-8px);
     border: 1px solid #d4af37;
 }
 
 .card h2 {
-    margin-bottom: 15px;
     color: #d4af37;
+    margin-bottom: 15px;
 }
 
-footer {
+/* ===== PAGE HEADERS ===== */
+.page-header {
     text-align: center;
-    padding: 30px;
-    background: black;
-    color: #aaa;
+    margin-bottom: 60px;
 }
-a {
+
+.page-header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+}
+
+/* ===== LIST STYLING ===== */
+ul {
+    margin-top: 20px;
+    padding-left: 20px;
+}
+
+ul li {
+    margin-bottom: 10px;
+}
+
+/* ===== CONTACT LINKS ===== */
+.contact-links {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.contact-links a {
     color: #d4af37;
     text-decoration: none;
+    font-size: 1.1rem;
+    transition: 0.3s;
 }
 
-a:hover {
-    color: white;
+.contact-links a:hover {
+    color: #ffffff;
+}
+
+/* ===== FOOTER ===== */
+footer {
+    background: #000;
+    text-align: center;
+    padding: 40px 0;
+    color: #888;
+    margin-top: 80px;
 }
